@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/dotnetcli.host",
+  "symbolInfo": {
+    "DefaultNamespace": {
+      "longName": "namespace",
+      "shortName": "ns"
+    },
+    "HttpMethod": {
+      "longName": "http-method",
+      "shortName": "m"
+    },
+    "UseValidations": {
+      "longName": "validations",
+      "shortName": "v"
+    },
+    "UseCustomizeEndpoint": {
+      "longName": "customize-endpoint",
+      "shortName": "c"
+    }
+  },
+  "usageExamples": [
+    ""
+  ]
+}

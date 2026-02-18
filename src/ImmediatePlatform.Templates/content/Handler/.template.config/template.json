@@ -1,0 +1,62 @@
+{
+    "$schema": "https://json.schemastore.org/template",
+    "author": "ImmediatePlatform",
+    "classifications": [
+        "ImmediatePlatform"
+    ],
+    "identity": "ImmediatePlatform.Handler",
+    "name": "ImmediatePlatform Handler",
+    "shortName": "iphandler",
+    "description": "An item template for creating an ImmediatePlatform handler.",
+    "tags" : {
+        "language": "C#",
+        "type": "item"
+    },
+    "sourceName": "ImmediateHandler",
+    "symbols": {
+        "DefaultNamespace": {
+            "type": "bind",
+            "binding": "msbuild:RootNamespace",
+            "replaces": "MyNamespace",
+            "defaultValue": "MyNamespace"
+        },
+        "HttpMethod": {
+            "type": "parameter",
+            "datatype": "choice",
+            "replaces": "HttpMethod",
+            "choices": [
+                {
+                    "choice": "Get",
+                    "description": "HTTP GET method"
+                },
+                {
+                    "choice": "Post",
+                    "description": "HTTP POST method"
+                },
+                {
+                    "choice": "Put",
+                    "description": "HTTP PUT method"
+                },
+                {
+                    "choice": "Delete",
+                    "description": "HTTP DELETE method"
+                }
+            ],
+            "defaultValue": ""
+        },
+        "UseApi": {
+            "type": "computed",
+            "value": "HttpMethod != ''"
+        },
+        "UseValidations": {
+            "type": "parameter",
+            "datatype": "bool",
+            "defaultValue": "false"
+        },
+        "UseCustomizeEndpoint": {
+            "type": "parameter",
+            "datatype": "bool",
+            "defaultValue": "false"
+        }
+    }
+}
