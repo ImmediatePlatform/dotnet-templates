@@ -1,4 +1,10 @@
 using ImmediatePlatform.Empty;
+using Immediate.Handlers.Shared;
+using Immediate.Validations.Shared;
+
+[assembly: Behaviors(
+	typeof(ValidationBehavior<,>)
+)]
 
 var builder = WebApplication.CreateBuilder(args);
 
