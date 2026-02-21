@@ -32,12 +32,12 @@ public static partial class ImmediateHandler
         
     }
 
-#if UseApi && UseCustomizeEndpoint
+#if (UseApi && UseCustomizeEndpoint)
     internal static void CustomizeEndpoint(RouteHandlerBuilder endpoint) => endpoint
         .WithName("ImmediateHandler")
         .Produces<Response>(StatusCodes.Status200OK);
-#endif
 
+#endif
     private static ValueTask<Response> HandleAsync(Query query, CancellationToken cancellationToken)
     {
         throw new NotImplementedException();

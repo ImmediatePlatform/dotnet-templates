@@ -5,6 +5,14 @@
       "longName": "namespace",
       "shortName": "ns"
     },
+    "QueryClassName": {
+      "longName": "query-class-name",
+      "shortName": "q"
+    },
+    "ResponseClassName": {
+      "longName": "response-class-name",
+      "shortName": "r"
+    },
     "HttpMethod": {
       "longName": "http-method",
       "shortName": "m"

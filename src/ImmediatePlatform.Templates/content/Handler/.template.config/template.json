@@ -13,6 +13,11 @@
         "type": "item"
     },
     "sourceName": "ImmediateHandler",
+    "forms": {
+        "firstLowerCaseInvariant": {
+            "identifier": "firstLowerCaseInvariant"
+        }
+    },
     "symbols": {
         "DefaultNamespace": {
             "type": "bind",
@@ -20,26 +25,43 @@
             "replaces": "MyNamespace",
             "defaultValue": "MyNamespace"
         },
+        "QueryClassName": {
+            "type": "parameter",
+            "description": "The name of the query class the handler will receive.",
+            "datatype": "string",
+            "replaces": "Query",
+            "defaultValue": "Query"
+        },
+        "QueryClassNameCamelCase": {
+            "type": "derived",
+            "valueSource": "QueryClassName",
+            "valueTransform": "firstLowerCaseInvariant",
+            "replaces": "query"
+        },
+        "ResponseClassName": {
+            "type": "parameter",
+            "description": "The name of the response class the handler will return.",
+            "datatype": "string",
+            "replaces": "Response",
+            "defaultValue": "Response"
+        },
         "HttpMethod": {
             "type": "parameter",
+            "description": "Adds the associated attribute to register the handler as an API endpoint.",
             "datatype": "choice",
             "replaces": "HttpMethod",
             "choices": [
                 {
-                    "choice": "Get",
-                    "description": "HTTP GET method"
+                    "choice": "Get"
                 },
                 {
-                    "choice": "Post",
-                    "description": "HTTP POST method"
+                    "choice": "Post"
                 },
                 {
-                    "choice": "Put",
-                    "description": "HTTP PUT method"
+                    "choice": "Put"
                 },
                 {
-                    "choice": "Delete",
-                    "description": "HTTP DELETE method"
+                    "choice": "Delete"
                 }
             ],
             "defaultValue": ""
@@ -50,11 +72,13 @@
         },
         "UseValidations": {
             "type": "parameter",
+            "description": "Generates a handler query implementing Immediate.Validations.",
             "datatype": "bool",
             "defaultValue": "false"
         },
         "UseCustomizeEndpoint": {
             "type": "parameter",
+            "description": "Generates a CustomizeEndpoint method in the handler. Requires a HTTP method to be specified.",
             "datatype": "bool",
             "defaultValue": "false"
         }
