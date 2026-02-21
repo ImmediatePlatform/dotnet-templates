@@ -1,10 +1,10 @@
-# ImmediatePlatform Templates
+# Immediate.Templates
 
-This repository contains `dotnet new` templates for ImmediatePlatform handlers and projects.
+This repository contains `dotnet new` templates for [ImmediatePlatform](https://github.com/ImmediatePlatform) handlers and projects.
 
 ## Installing Templates
 
-Clone this repository and run `dotnet new install ./src/ImmediatePlatform.Templates/`.
+Clone this repository and run `dotnet new install ./src/Immediate.Templates/`.
 
 ## Included Templates
 
@@ -24,7 +24,7 @@ dotnet new webapiip -n MyApi
 
 ### ImmediatePlatform Handler
 
-An item template for creating an ImmediatePlatform handler. Generates a handler class with configurable query/response records, optional API endpoint mapping, validation support, and endpoint customization.
+An item template for creating an Immediate.Handlers handler. Generates a handler class with configurable query/response records, optional Immediate.Apis API endpoint mapping, Immediate.Validations support, and endpoint customization.
 
 **Short name:** `iphandler`
 **Type:** Item
