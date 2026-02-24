@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json.schemastore.org/dotnetcli.host",
+  "symbolInfo": {
+    "UseCpm": {
+      "longName": "cpm",
+      "shortName": "c"
+    }
+  },
+  "usageExamples": [
+    ""
+  ]
+}

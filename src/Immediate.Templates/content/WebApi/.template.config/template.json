@@ -32,6 +32,12 @@
                     }
                 ]
             }
+        },
+        "UseCpm": {
+            "type": "parameter",
+            "datatype": "bool",
+            "defaultValue": "false",
+            "description": "Use CPM style package references (omits version numbers)."
         }
     }
 }

@@ -6,11 +6,20 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+<!--#if UseCpm -->
+  <ItemGroup>
+    <PackageReference Include="Immediate.Apis" />
+    <PackageReference Include="Immediate.Handlers" />
+    <PackageReference Include="Immediate.Validations" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
+  </ItemGroup>
+<!--#else -->
   <ItemGroup>
     <PackageReference Include="Immediate.Apis" Version="4.0.0" />
     <PackageReference Include="Immediate.Handlers" Version="3.2.0" />
     <PackageReference Include="Immediate.Validations" Version="3.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.3" />
   </ItemGroup>
+<!--#endif -->
 
 </Project>

@@ -4,3 +4,13 @@ GET {{ImmediatePlatform.Empty_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+
+GET {{ImmediatePlatform.Empty_HostAddress}}/weatherforecast?location=NewMexico
+Accept: application/json
+
+###
+
+GET {{ImmediatePlatform.Empty_HostAddress}}/weatherforecast?location=NewMexico&days=30
+Accept: application/json
+
+###
