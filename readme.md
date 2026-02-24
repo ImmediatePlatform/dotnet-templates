@@ -20,6 +20,12 @@ A project template for creating a RESTful Web API using ImmediatePlatform handle
 dotnet new webapiip -n MyApi
 ```
 
+#### Options
+
+| Option | Alias | Description | Type | Default |
+|---|---|---|---|---|
+| `--cpm` | `-c` | Use CPM style `PackageReference`s (omits version number) | `bool` | `false` |
+
 ---
 
 ### ImmediatePlatform Handler
