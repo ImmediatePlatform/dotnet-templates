@@ -52,3 +52,23 @@ Create a handler with a GET endpoint and validations:
 ```bash
 dotnet new iphandler -n GetWeather -m Get -p:v -q Query -r WeatherForecasts
 ```
+
+---
+
+### ImmediatePlatform Cache
+
+An item template for creating an Immediate.Cache cache. Generates a cache and associated handler class.
+
+**Short name:** `ipcache`
+**Type:** Item
+**Language:** C#
+
+```bash
+dotnet new ipcache -n GetWeather
+```
+
+#### Options
+
+| Option | Alias | Description | Type | Default |
+|---|---|---|---|---|
+| `--namespace` | `-ns` | The root namespace for the generated handler. | `string` | `MyNamespace` |
